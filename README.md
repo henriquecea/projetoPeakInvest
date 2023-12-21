@@ -12,3 +12,4 @@ Este projeto utiliza AngularJS juntamente com uma API em ASP.NET Core.
 6. Execute a solução.
 7. Agora você pode acessar qualquer um dos IPs no seu navegador.
 8. Existem duas telas disponíveis, acessíveis com `/` após o IP (Ex: http://000.000.0.000:8080/cadastro ou /consulta).
+9. Pode ser necessário ajustar a porta nos arquivos com o termo 'service' em sua nomenclatura para garantir o funcionamento adequado do programa.

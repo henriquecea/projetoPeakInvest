@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeakInvest - Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="app.js"></script>
+  <script src="cadastroService.js"></script>
+  <script src="cadastroController.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="CadastroController">
+
+  <div class="form-container">
+    <h2 class="titulo-principal">Cadastro</h2>
+    <label class="titulo">Valor: R$</label>
+    <input type="number" ng-model="valor" min="0" step="0.01" required>
+
+    <label class="titulo">Número de Parcelas:</label>
+    <input type="number" ng-model="parcelas" min="1" required>
+
+    <button type="button" ng-click="calcularParcelas()">Calcular</button>
+
+    <p class="titulo-resultado">R$ {{ resultado }}</p>
+  </div>
+</body>
+
+</html>

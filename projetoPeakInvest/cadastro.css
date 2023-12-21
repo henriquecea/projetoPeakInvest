@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #010618;
+  font-family: 'Bitter', serif;
+  color: white;
+}
+
+.form-container {
+  text-align: center;
+  background-color: rgb(10, 35, 58);
+  padding: 30px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-family: 'Bitter', serif;
+  border: none;
+  cursor: pointer;
+
+}
+
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.titulo-principal {
+  font-size: 2em;
+}
+
+.titulo {
+  font-size: 1.2em;
+}
+
+.titulo-resultado {
+  font-size: 1.5em;
+  background-color: rgb(30, 86, 138);
+  padding: 10px;
+}
